@@ -1,13 +1,11 @@
 import React from 'react';
 import Profil from '../assets/Profil.jpg'
 import hero from '../assets/hero.png'
-import { FaLinkedinIn } from "react-icons/fa6";
-import { GrMailOption } from "react-icons/gr";
-import { FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import Socials from '../Components/Socials';
 
 const Abstract = () => {
     return (
-        <main className='w-full h-[100vh] bg-gray-300 px-10 pt-5 pb-20 flex gap-5'>
+        <main className='w-full h-[100vh] bg-gray-200 px-10 pt-5 pb-20 flex gap-5'>
             <section className='w-[100%] flex flex-col items-center mt-10 gap-3'>
                 <div className="w-full h-[30rem] flex justify-center"><img className='w-[25rem] h-full' src={Profil} alt="" /></div>
 
@@ -22,20 +20,7 @@ const Abstract = () => {
                                 <p className='text-xl flex flex-col items-center'><span className='font-medium'>First-Name:</span> Ahmed Amine</p>
                                 <p className='text-xl flex flex-col items-center'><span className='font-medium'>Last-Name:</span> Benelmalih</p>
                             </div>
-                            <div className='flex items-center pt-1 gap-5'>
-                                <div className='p-2 hover:bg-gray-500 hover:in-hover:*:text-gray-300'>
-                                    <FaLinkedinIn className='text-black text-[27px]' />
-                                </div>
-                                <div className='p-2 hover:bg-gray-500 hover:in-hover:*:text-gray-300'>
-                                    <GrMailOption className='text-black text-[27px]' />
-                                </div>
-                                <div className='p-2 hover:bg-gray-500 hover:in-hover:*:text-gray-300'>
-                                    <FaTelegramPlane className='text-black text-[27px]' />
-                                </div>
-                                <div className='p-2 hover:bg-gray-500 hover:in-hover:*:text-gray-300'>
-                                    <FaWhatsapp className='text-black text-[27px]' />
-                                </div>
-                            </div>
+                            <Socials flex={'flex'}/>
                         </section>
 
                         <div className='flex flex-col gap-1.5'>
@@ -50,7 +35,7 @@ const Abstract = () => {
                 </section>
             </section>
 
-            <article className='w-[100%] bg-zinc-500/60 flex flex-col items-center pb-10 pt-5 px-15 gap-5'>
+            <article className='w-[100%] bg-[#9da56795] flex flex-col items-center pb-10 pt-5 px-15 gap-5'>
                 <h2 className='text-3xl mb-2'>Why I choise Development?</h2>
                 <section className='text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. A commodi ipsum ullam excepturi voluptatum ut adipisci vel quis provident optio placeat eos facilis aut voluptas debitis maxime, rem sint. Exercitationem.</section>
 
